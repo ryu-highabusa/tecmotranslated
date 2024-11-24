@@ -1,0 +1,1480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS"><script type="text/javascript" src="comment04_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="comment04_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="comment04_files/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.tecmo.co.jp:80/product/doa/list/comment04.htm","19991112191034","https://web.archive.org/","web","/_static/",
+	      "942433834");
+</script>
+<link rel="stylesheet" type="text/css" href="comment04_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="comment04_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+<meta name="GENERATOR" content="IBM HomePage Builder 2000 V4.0.4  for Windows">
+<title></title>
+</head>
+
+<body background="comment04_files/bcg2.gif" text="#ffffff" link="#80ffff" vlink="#aad9a6" alink="#ff75cb">
+
+<h1 align="center"><font color="#ffff00">開発秘話</font></h1>
+<p align="center">
+<font size="+1"><b>～その４　<font color="#ff00ff">DEAD OR ALIVE (PS)</font>　篇～</b></font><br>
+<font size="+1"><b>前編</b></font>
+</p>
+<p>
+<br>
+</p>
+<center>
+<table cellpadding="3">
+  <tbody><tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+2">特別企画</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>　</td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font size="+2" color="#ff0000">ＰＳ版DOA</font></b>と<font size="+2" color="#0080ff"><b>ＳＳ版DOA</b></font>、<br>
+<font size="+2"><b>どっちがいいか対決！</b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>　</td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+1">どんどんどんどん</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><font size="+1">ぱふぱふ！</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>今回は、<font size="+1">チャット</font>で、対談をしてもらおうと思います。<br>
+<font color="#80ffff"><font size="+1"><font color="#00ff80"><b>ＳＳ版のメインプログラマー</b></font><font color="#80ffff">鵺雛翅</font></font></font><font size="+1">さん</font>と、<br>
+<font size="+1"><font color="#ff80ff"><b>ＰＳ版のメインプログラマー</b></font><b><font color="#ffff80">ＤＯＲＡ</font></b>さん</font>に<br>
+対決してもらいましょう！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>チャットといっても、実は、半径５ｍ以内に、みんないるデス。<br>
+ここから<b><font color="#ffff80">ＤＯＲＡ</font></b>さんの背中が見えるデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>それでは、<font size="+2"><b>ＧＥＴ　ＲＥＡＤＹ・・・ＦＩＧＨＴ！</b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ま、<font color="#0080ff"><b>ＳＳ</b></font>版は<font size="+4" color="#ff0000">リング</font>あるしねぇ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>うっ。た、たしかに　<b><font color="#ff0000">ＰＳ</font></b>版ではリングはありませんね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>リングアウトあると、<font size="+2" color="#ff0000">タイムアタックも便利</font>だし（笑）。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>プレイスタイルに差がでますよね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+1" color="#ffff00">ＰＳは、どうしてなくなったのか</font>質問がきてましたよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><b><font color="#ff0000">ＰＳ</font></b>では　リングはポリゴンを使わないと、<br>
+表現出来ませんからね。（ヤバイ！！！）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>今の<b><font size="+2" color="#80ff00">オフレコ</font></b>で．．．　おねがいします。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font color="#0080ff"><b>ＳＳ</b></font>版との違いを出すために、<br>
+広々とした場所での戦いを・・・伸び伸びと・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ってことにしようとしてるデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>そ－－－－－っすかね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>でも<b><font color="#ff0000">ＰＳ</font></b>版のキャラクターも元祖、<br>
+<font color="#0080ff"><b>ＳＳ</b></font>と同じく地上１メートルの高さで闘ってるんだよね？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>そうです！リングアウトはしなくても。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>あそこは海抜１メートルらしい。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>そうなりますネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>大潮の日は危険そうだ（笑）。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>ザック面は満潮になると沈むらしいです（ウソ）。<br>
+背景全体のイメージは、<font color="#0080ff"><b>ＳＳ</b></font>版は初代のアーケードに近いですよネ。<br>
+<font size="+2"><b><font color="#ff0000">ＰＳは全てオリジナル背景</font></b></font>になってますんで。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>アーケードのポリゴン背景を<br>
+<font color="#0080ff"><b>ＳＳ</b></font>でＢＧに直すのにＣＧは苦労してたみたい。<br>
+しかも、１６色パレットに落とすの大変なんだよね。（笑）<br>
+あ、画面全部で１６色ってイミじゃないよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>そうだったんですか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>でも、<font size="+2" color="#00ff80"><b>かなり立体的</b></font>に見えますよネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><font color="#ff0000"><b>ＰＳ</b></font>ではいろいろなところからポリゴンを減らして、<br>
+どこに回したデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="+3" color="#ff80ff">人間。</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>洋服とか、かなり凝ってますよね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>細かい事を言うとマシンのパワーは<br>
+ポリゴン数だけではなくて表示する面積にも影響するんです。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>そうそう。<br>
+大きいポリゴン出すとそれだけで、他のが消えたりしてた。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ふーん。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>プログラマから見て<font color="#0080ff"><b>ＳＳ</b></font>と<b><font color="#ff0000">ＰＳ</font></b>どちらの方が制約が多いデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>どうだろうねぇ？　<br>
+クオリティとか考えなければ、<br>
+なんでもポリゴンで表現出来る<b><font color="#ff0000">ＰＳ</font></b>の方が制約は少ないと思う。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>そうですか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font color="#0080ff"><b>ＳＳ</b></font>だと厳しいこともあるしね。<br>
+光源処理とかとか。<br>
+そのかわり、<b><font color="#ff0000">ＰＳ</font></b>より<font size="+1"><b><font color="#ffff80">高解像度</font></b></font>だし、<b><font size="+1" color="#ffff80">テクスチャも美麗</font></b>だね。<br>
+あと、ゆがまないし（ぼそ）。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>（うっ、やばい）<font size="+2"><b><font color="#80ff80">光源処理はＰＳならでは</font></b></font>ですかネ。<br>
+まぁ、下手に光源をいじるとキレイなテクスチュアが発色しなくなって<br>
+ＣＧの人に怒られますケド。<br>
+でも制約面で言えばＢＧがある分　<br>
+<font color="#0080ff"><b>ＳＳ</b></font>も楽になる部分ってありますよネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ま、<font size="+3" color="#ff0000">リング</font>とか<font size="+3" color="#ff0000">リング</font>とか。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>しかも、<font size="+2"><b><font color="#ff80ff">回転</font></b></font>しちゃいますよね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font size="+2" color="#ff80ff">遠景</font></b>と<b><font size="+2" color="#ff80ff">近景</font></b>ももてたしね。<br>
+<b><font size="+1">使えるポリゴンを全部人間に使えた</font></b>しね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>面積も気にしなくて良いんですよネ？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ＢＧとポリゴンは処理してるチップが違うからね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="-1">だから地面が欠けない。（オフレコ）</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>リングの側面は消えるけど。（ｏｒ消してる）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>おりょ。<b><font color="#ffff80">ＤＯＲＡ</font></b>さんに電話デス。しばし休憩デス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>戻りました。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>お二人は<font size="+2"><b><font color="#00ff80">プログラム歴</font></b></font>何年デスか？<br>
+いちごはお恥ずかしながら、<font size="-1" color="#ff80ff">半年で終了した</font>デス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="-1">私、研修の３ヶ月。</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>今入社６年目で入社前にパソコンをさわったのは、<br>
+三国○とオーガ○タです。<br>
+しかも友達の家で・・・。<br>
+私、<font size="+1"><b><font color="#80ff80">パソコン持ってませんでした</font></b></font>から。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>それで、今は<b><font color="#ff0000">ＰＳ</font></b>のメインプログラマですか。<br>
+すごい・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>研修中、パソコンに慣れるまでコワイものだから、<br>
+滅多に触りませんでした。<br>
+プログラムの実作業になってから、<br>
+やっと怖がらずに普通に触れるようになりました。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ひょほ！<br>
+私は今でもパソコンを触る時少しビビッているデス。<br>
+よく止まってしまって、<font color="#80ffff">鵺雛翅</font>さんに助けてもらっているデス。<br>
+あれ？<font color="#80ffff">鵺雛翅</font>さんがいつのまにか席を外してるデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ほんとだ。隣なのに気付かなかった。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>いちごの家には<font size="+2" color="#ff80c0"><b>パソコンが２台</b></font>、<br>
+<font size="+2" color="#ff80c0"><b>プリンタも２台</b></font>有るデス。（自慢）<br>
+でも使いこなせていないデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>あつそー。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>使っていないのであつくないデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>あっそー。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="+1"><b>さむっ。</b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>私も、家じゃ、パソコン滅多に触らないんで、<br>
+みんなに　「宝のもちぐされだと」　怒られてます。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ただー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ただー？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ただいま”の意味、ネットワークゲーム界の常識。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>返事は、”おかー”。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>おかー。っていうかどこ行ってたデスか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font color="#80ffff">鵺雛翅</font>さんは、プログラム歴は？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>入社７年目だけどねぇ。<br>
+      中坊の頃からベーシックとかＺ８０とか組んでし・・・・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ということは、<font size="+2" color="#ff0080"><b>ＳＳの勝ち</b></font>ですか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>へ？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font color="#ffff80">ＤＯＲＡ</font></b>さんピンチ！！反撃するデス！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>まぁ、実際<br>
+<font size="+1"><b><font color="#80ff80">プログラマーレベルは負けてます。</font></b></font>（オフレコ）<br>
+鵺雛翅さんは、私らの講師だし。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>話は変わりますけれど、<br>
+ずばり！<font size="+1"><b><font color="#ff0000">ＳＳの方が売れました</font></b></font>ね。<font size="+2" color="#ff0000">ＳＳ有利</font>ですね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>あ、<b><font color="#ffff80">ＤＯＲＡ</font></b>さん、またもや電話デス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>～しばし休憩～</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>いまのうちに、おかーの準備。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>はい。誰が一番か競争デス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>いやードキドキです。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ただーって言わなかったりして？（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>どきどき</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>みなさん<font size="+2" color="#80ffff">Ｅｎｔｅｒに手を乗せるのは止める</font>デス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>ただ－</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>負けたデス</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><b>みるく</b>のかち！！！！<br>
+ジュースでいいや。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>あ！そういえば、<font color="#0080ff"><b>ＳＳ</b></font>版、最後<font size="+2"><b><font color="#ffff80">あわてました</font></b></font>よね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>え？なんのこと。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><font size="+2" color="#ff0000">首</font>をかけて<font size="+2"><b><font color="#ff0000">白状</font></b></font>するデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>うっ・・・。<br>
+実は、<font color="#0080ff"><b>ＳＳ</b></font>版は<b><font size="+1" color="#ff80ff"><br>
+マスターアップ後に無限コンボ</font></b>が見つかって。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>ありゃありゃ、そ～れから？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>急いで再アップしたんだけど、間に合わなくて・・・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>それから、それから！！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>でも、増刷版は無限無くなってるはずだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>増刷版と比較してみるのも、楽しいデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>そーか、そーか。<b><font color="#ff0000">ＰＳ</font></b>なんかね～。<br>
+３本　同じハードで作ったじゃないですか。<br>
+国内、ＵＳＡ、ＰＡＬと．．．。<br>
+やっぱり、ちょっとずつ改良していくんで。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ふむふむ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>結果的には、ＰＡＬが一番良かったんですが、</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>まぁ、もっとも、ＰＡＬというのは、<br>
+画面の更新フレームが、ＮＴＳＣ（国内　ＵＳＡ）とは違うんで、<br>
+当然マシンパワーの使い方が違うんですけどネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ＰＡＬ版は１秒間に５０フレームデスからね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>おかげで、<font size="+2"><b><font color="#ff0000">ＰＡＬ版では完璧なもの</font></b></font>ができましたとさ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>あー、<b><font size="+2" color="#00ffff">コスチュームの数</font></b>も、<b><font color="#ff0000">ＰＳ</font></b>が勝ってますね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><b><font size="+2" color="#80ff80">キャラクタ数</font></b>でも勝ってます！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+2"><b><font color="#ff0000">ＰＳオリジナルとＳＳオリジナル</font></b></font>だと？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>はっ！コスチュームは負けじゃないですか？<br>
+し、調べないと、ハッキリは言えません。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>あ、でも新キャラ分があるから、<font color="#ff0000"><b>ＰＳ</b></font>のが多いか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>あやねですね。これはでかい。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>でも、<font size="+2"><b><font color="#ffff80">あやね出すの面倒</font></b></font>だよ！<br>
+うちの<b><font color="#ff0000">ＰＳ</font></b>版まだ出てないよ！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="+2"><b><font color="#ff80ff">メモリーカード</font></b></font>貸しましょうか？？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>せっかく、あやね使いになったのに！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>＋＋で練習しても意味ないですよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>私、<font color="#0080ff"><b>ＳＳ</b></font>は、すごいですよ。<br>
+かすみの声もでました。<font size="+2" color="#ff80ff">１００回</font>つかって。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>すごい。<br>
+もしかして<b>みるく</b>は<font size="+2"><b><font color="#80ff80">かすみファン</font></b></font>？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><b><font size="+2" color="#80ff80">レイファン</font></b>。しゃれ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>さむっ！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>キャラ数って、トレ子をあやねと考えると、<br>
+<b><font color="#ff0000">ＰＳ</font></b>オリジナルは、バースが増えただけ？？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>だめですよ。自滅しちゃ。<br>
+そういえば！<b><font color="#ff0000">ＰＳ</font></b>は、<br>
+<font size="+2"><b><font color="#ffff80">デュアルショック対応</font></b></font>なんですよね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>あれはいいでしょ。気持ちいいよね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>デュアルショック持ってない・・・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ごめんなさい、トイレに行きます。ウーロン茶の飲みすぎ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>私も、トイレ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>あいやー！<br>
+<b>みるく</b>と<b><font color="#ffff80">ＤＯＲＡ</font></b>さんが同時にいなくなったデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>二人っきりだね、ふふふ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>うふ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>このばあい、<br>
+<font color="#ff8080"><b>いちご</b></font>と<font color="#80ffff">鵺雛翅</font>さんの「おかー」競争ですか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>いやぁ、どうだろう？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>もう入れたな？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>正式にはoka-なんだけどね。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>～しばらくして～</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>た</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>だ</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ｏｋａー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>おか－</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>ただ－</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>おかー</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>が先だったかな</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>？？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>はやいデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>かるく<font size="+2"><b><font color="#ff0000">反射神経</font></b></font>って感じよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>帰ってきてるの見えてるからねぇ？（笑）<br>
+キー打つのも見えてるしぃ。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ばれてます？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font color="#ff0000">ＰＳ</font></b>版勝ちポーズ<font size="+3"><b><font color="#ffff00">カメラしょぼい</font></b></font>よね？<br>
+ＣＧ泣いてるよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>自分でカメラを動かして下さい。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>寄らないから<font size="+3"><b><font color="#ffff00">迫力にかける</font></b></font>じゃん。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>確かに迫力面では、キビシイですネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font color="#0080ff"><b>ＳＳ</b></font>版は、勝ちポーズカメラのデータを<br>
+<b><font size="+2" color="#ff0000">ボス自ら作ってた</font></b>しぃ。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>へー。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>俺も作ったしね、<br>
+ティナの<b><font size="+2" color="#ff0080">足なめ顔カメラ</font></b>は自信作です。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>足なめ顔カメラですか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>そうそう、足の裏の手前にカメラ置いて、ローアングルでねらう奴。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>ローアングルはキビシイですネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+2" color="#00ff80"><b>やらしそう</b></font>な感じで<font size="+2" color="#0080ff"><b>マイナス</b></font>です！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>でもそのおかげでティナファン増えたでしょうね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>ティナ<font size="+2" color="#ff80ff">座ってる</font>って。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>実は、何が<font color="#ff0000"><b>ＰＳ</b></font>オリジナルだったか　<br>
+覚えていないんです。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font color="#0080ff"><b>ＳＳ</b></font>にあって、<font color="#ff0000"><b>ＰＳ</b></font>に無いのは<br>
+レイファンの水着くらい？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>う－－ん。もう区別つかなかったりして。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>レイファンの水着、<b><font color="#ff0000">ＰＳ</font></b>の良くなりましたね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ＤＯＡは日々進歩してるデスからね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+3"><b><font color="#ff0000">胸でかい。</font></b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+3"><b><font color="#ff0000">でかすぎ。</font></b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>レイファンはどんどんかわいくなります。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>実際、ＤＯＡって、日々更新されているので、<br>
+<b><font color="#0080ff">ＳＳ</font></b>と<b><font color="#ff0000">ＰＳ</font></b>だと、かなり違うテイストになってますよネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>そういえば、<font color="#ff0000"><b>ＰＳ</b></font>版、<br>
+<b><font size="+1" color="#00ff80">リプレイのメモリよく確保出来たね？</font></b></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>う。余裕です。<br>
+な～んて、ホントは<font size="+2"><b><font color="#80ffff">ギリギリ</font></b></font>です。<br>
+<font color="#0080ff"><b>ＳＳ</b></font>を見たとき<b><font color="#00ff80">「リプレイ入っちゃた」</font></b>って感じでしたから、<br>
+やっぱり入れなきゃまずいだろうなぁ－－って。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font color="#0080ff">ＳＳ</font></b>版も<b><font size="+2" color="#ff80ff">かなりのトリック</font></b>使って入れたからねぇ。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font size="+2" color="#ff80ff">トリック</font></b>デスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+2" color="#80ff80">メモリのダイエット</font>と、<br>
+<font size="+2" color="#80ff80">リプレイデータ</font><font size="+2" color="#80ff80">のダイエット</font>。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ひょへ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>私もしなきゃ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>した方が良いと思うデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+1" color="#ff80ff"><b>お互いにがんばろう！</b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ひょひょ！誰にいってるデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+3"><b><font color="#80ffff">俺</font></b></font>？（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>いやきっと<br>
+<font size="+4"><b><font size="+3" color="#ffff80">私にです。</font></b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>うう・・・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b>みるく</b>に答えてもらうデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+2" color="#ffff80">ごめんなさい。ゆるしてください。</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font color="#ffff80">ＤＯＲＡ</font></b>さん許してあげてくださいデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+1"><b>（爆）</b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font color="#ff8080"><b>いちご</b></font>、こわいよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="+2" color="#00ff80">気にしてませんよ。（涙）</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>そいや、<br>
+<b><font color="#ffff80">ＤＯＲＡ</font></b>にも<b><font color="#0080ff">ＳＳ</font></b>版のメモリダイエット協力してもらったね。<br>
+つーか、”しろ”命令だった気もする。（笑）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>あぁ－－。<br>
+でもあれって、本当に無駄なメモリ使用でしたから・・・。<br>
+泣きながら　１Ｂｙｔｅづつ　削りました。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>プログラマどうし、協力しあっているんですね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font color="#ffff80">ＤＯＲＡ</font></b>は業務用からＤＯＡだから、<br>
+<b><font color="#ff0000">「オリジナルプログラム By ＤＯＲＡ」</font></b><br>
+ってのが結構あったからね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>そーデスか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>では、最後に、<br>
+<font size="+2" color="#ffff80">これだけは、勝ってるということ<br>
+</font>とか、<font size="+2"><b><font color="#ffff80">強気</font></b></font>にお願いします。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font size="+3" color="#ff0000">関節補完！</font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>キャラクタの関節デスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>そうです。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>きれいデス～。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>モーションのデータもプログラムもほとんど同じだからねぇ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>プログラムなんですか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font color="#0080ff">ＳＳ</font></b>は、動き以外だと、やっぱ<br>
+<font size="+3" color="#ff0000">アップになるカメラ</font>かな？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>カメラはどう違うデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td>勝ちポーズ中、<font color="#0080ff"><b>ＳＳ</b></font>版実は負けた方を表示してないんです。<br>
+だから、究極まで勝った方にカメラを寄せられるんです。<br>
+<font size="+2"><b><font color="#ff0080">美麗な顔ＣＧを堪能</font></b></font>出来るんです。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ふーん。<br>
+<b><font color="#ff0000">ＰＳ</font></b>ではどうしてそうしなかったんデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td><font color="#0080ff"><b>ＳＳ</b></font>版みたいに、リプレイから勝ちポーズの流れを<br>
+中断させたくなかったので。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>そういえば、<font color="#ff0000"><b>ＰＳ</b></font>版、ユーザーの方から<br>
+<b><font size="+1" color="#80ff80">「カメラがもっとキャラクタによったらいいのにー。」<br>
+</font></b>と言う意見を多く頂いたデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>たしかに、頂きました。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ＤＯＡは女性キャラクタが主役なので、<br>
+特によって欲しかったんだと思うデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>う－－ん。バランスなんですよネ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td>こういう部分のみなさんの意見は　<br>
+次回作で参考にしています。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><b><font size="+2" color="#ff0000">＋＋はかなり寄れてる</font></b>よね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>かっこいいですね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>＋＋は　ガンバッテルと思います。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+2"><b><font color="#ffff00">プラスプラスに期待大</font></b></font>ですね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#80ffff">鵺雛翅</font></td>
+    <td><font size="+2"><b><font color="#ff0000">ピンポイントで取るの熱い</font></b></font>しね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffff80">ＤＯＲＡ</font></b></td>
+    <td>みなさん練習してください。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td><b><font size="+1"><a href="https://web.archive.org/web/19991112191034fw_/http://www.tecmo.co.jp/product/doa/list/comment04b.htm" target="_self">－－－後編につづく！－－－</a></font></b></td></tr>
+</tbody></table>
+
+</center>
+<p>
+<br>
+</p>
+<p align="center">
+<br>
+<br>
+<img src="comment04_files/hart_s.jpg" height="40" width="37"><img src="comment04_files/hart_s.jpg" height="40" width="37"><img src="comment04_files/waraji_s.jpg" height="40" width="100"><img src="comment04_files/hart_s.jpg" height="40" width="37"><img src="comment04_files/waraji_s.jpg" height="40" width="100"><img src="comment04_files/hart_s.jpg" height="40" width="37"><img src="comment04_files/hart_s.jpg" height="40" width="37">
+</p>
+<p align="center">
+<br>
+<br>
+<br>
+</p>
+<p align="center">
+<br>
+<b><a href="https://web.archive.org/web/19991112191034fw_/http://www.tecmo.co.jp/product/doa/list/gamelist.htm" target="_parent">ゲームリスト　トップページ</a></b><br>
+<br>
+<a href="https://web.archive.org/web/19991112191034/http://www.tecmo.co.jp/product/doa/doa_home.htm#menu" target="_top"><b>メインページに戻る</b></a><br>
+</p>
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 19:10:34 Nov 12, 1999 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:01:25 Nov 24, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.879
+  exclusion.robots: 0.03
+  exclusion.robots.policy: 0.013
+  esindex: 0.018
+  cdx.remote: 6.16
+  LoadShardBlock: 75.311 (3)
+  PetaboxLoader3.datanode: 127.384 (4)
+  load_resource: 147.63
+  PetaboxLoader3.resolve: 65.14
+-->
