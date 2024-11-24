@@ -31,7 +31,7 @@
       }
     </script>
     <!-- is_embedded: False; context:  -->
-    <!-- navbar https://archive.org/web/navbar.php 0.13297s -->
+    <!-- navbar https://archive.org/web/navbar.php 0.09654s -->
     <!-- navbar script -->
     <script src="//archive.org/includes/athena.js?v=286c7941" type="text/javascript"></script>
     <script src="//archive.org/components/npm/lit/polyfill-support.js?v=286c7941" type="text/javascript"></script>
@@ -44,7 +44,7 @@
     <meta property="mediatype" content="">
     <meta property="primary_collection" content="">
     <!-- navbar end -->
-    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app212.us.archive.org';v.server_ms=550;archive_analytics.send_pageview_on_load()}</script>
+    <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=680;archive_analytics.send_pageview_on_load()}</script>
     <link href="/_static/images/archive.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
