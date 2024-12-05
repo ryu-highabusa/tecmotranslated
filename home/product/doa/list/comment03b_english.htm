@@ -1,0 +1,585 @@
+<html><head>
+<meta name="GENERATOR" content="IBM HomePage Builder V3.0  for Windows">
+<title></title>
+</head>
+
+<body background="comment03b_files/bcg2.gif" text="#ffffff" link="#80ffff" vlink="#aad9a6" alink="#ff75cb">
+ 
+
+<h1 align="center"><font color="#ffff00">開発秘話</font></h1>
+<p align="center">
+<font size="+1"><b>～その３　<font color="#ff00ff">DEAD OR ALIVE (SS)</font>　篇～</b></font><br>
+<b><font size="+1">後編</font></b>
+</p>
+<center>
+<table cellpadding="3">
+  <tbody><tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>なんかさ、<br>
+<font color="#ffff00"><b>ＰＳ</b></font>の方がポリゴンがすごいとか言う奴が<br>
+いっぱいいたでしょ？<br>
+そういうのって燃えるきっかけになるわけよ、<br>
+<font size="+1"><b><font color="#ff0000">サターン博物館の館長</font></b></font>としては。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>館長？？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく　</b></td>
+    <td>だれそれ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td><b><font color="#ff00ff">ＳＳ版</font></b>を作ってた頃は、<b><font color="#ff00ff">ＰＳ版</font></b>を作るつもりは<br>
+俺には無かったからね。<br>
+でも、両方つくった今でも俺は思うけど・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>思うけど？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>けど？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>根拠なく、どっちがすごいとか言わないで欲しいよ。<br>
+そんなの両方のマシンを最大限に叩かなくちゃ<br>
+わからないことなのに。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>うーむ。ボスの瞳に<font size="+1"><b><font color="#ff0000">炎</font></b></font>が見えるデス・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b><font color="#ffffff">みるく</font></b></td>
+    <td>ボス・・・怒らないで・・・。<b>みるく</b>も悲しくなります・・・ぐすん。<br>
+なんちゃって～！<br>
+<b>みるくポイントアップ</b>！イエーイ！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td><b><font color="#ff00ff">ＳＳＤＯＡ</font></b>開発時の最高のライバルは、<br>
+やはり<b><font size="+0" color="#ff00ff">サターンのＶＦ２</font></b>だったな。<br>
+あの発売時期であの完成度を実現してるのは、<br>
+ほとんど理解不能だな(^^;</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><b><font color="#ffff00">ＰＳ</font></b>とかも合わせて<b><font color="#ff00ff">ＶＦ２</font></b>が一番なんですか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>そうだね。当時でいったら間違いなく<b><font color="#ff00ff">ＶＦ２</font></b>だな。<br>
+おもしろさ、ビジュアル、技術レベル・・・<br>
+どれをとっても１番だったんじゃないの？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>かっちょいい～！！！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>うん。それに、ＶＦ２って<b><font color="#ffff00">リプレイエンディング</font></b><br>
+やってるんだよね。<br>
+いったいどこにそんな容量あるのかって思うよ。<br>
+かなりきついからね、家庭用のリプレイエンディングって。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご　　　　　</b></font></td>
+    <td>ふーん。リプレイは容量がいっぱい必要なんデスね～。　　　　　</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>おっ！！！わかった！！！<br>
+ボス、きっと隠してるんですよ、<font color="#ffff00"><b>セガセガ</b></font>は。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>ん、何を？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ボスのしらない<b><font size="+1" color="#ff0000">隠しメモリ</font></b>が<br>
+きっと<b><font color="#ffff00">サターン</font></b>にはついてるんです！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>はあ！？　んなわけないだろ！<br>
+<b><font color="#ffff00">セガ</font></b>に限って・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+</tbody></table>
+
+</center>
+<p align="center">
+<img src="comment03b_files/waraji_s.jpg" height="40" width="100"><img src="comment03b_files/hart_s.jpg" height="40" width="37"><img src="comment03b_files/waraji_s.jpg" height="40" width="100"><img src="comment03b_files/hart_s.jpg" height="40" width="37"><img src="comment03b_files/waraji_s.jpg" height="40" width="100"><img src="comment03b_files/hart_s.jpg" height="40" width="37"><img src="comment03b_files/waraji_s.jpg" height="40" width="100">
+</p>
+<center>
+<table cellpadding="3">
+  <tbody><tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ところで！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ふひゃ？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><b><font color="#ff00ff">ＳＳＤＯＡ</font></b>は、<b>みるく</b>が初めてバグチェックしたゲーム<br>
+なのです。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>うん。<b><font color="#ff8080">いちご</font></b>も！<br>
+研修終ってすぐだったから、<br>
+直接ゲーム作りに携わってるっていう実感を<br>
+初めて味わったゲームだったデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>そうだね。<br>
+何かきついのあったね。なんだっけあれは。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>技の総当たりのチェックデス！<br>
+組み合わせがありすぎだったデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>技数が多いからね。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ボスの思い出はなんデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>やっぱりモーション全部つくりなおしたのが、<br>
+思い出というか大変だったね。<br>
+実際にデザインした<a href="https://web.archive.org/web/20000606143328/http://www.tecmo.co.jp/product/doa/itigo/itigo04.htm" target="_top"><b>鯨太左エ門</b></a>たちも<br>
+苦労したんじゃないかな。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ですよね～。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>・・・って<b>みるく</b>もやったデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td><font size="+1"><b><font color="#ff0000">かなりやってないね。</font></b></font></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>（聞いてない）<br>
+ただ、あれをやらないことにはしかたなかったからね。<br>
+あ、モーション作り直したのはね、<br>
+ゲーム性を進化させたかったからだけじゃないんだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ほへ？？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>昔のデータフォーマットだと、容量的に<b><font color="#ffff00">サターン</font></b>に、<br>
+入らないんだよ。<br>
+<b><font color="#ffff00">業務用ＤＯＡ</font></b>の技だけでも載らないんだから、<br>
+新技追加なんてもってのほか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>そうだったんですか！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>だから、メモリ消費量が少ないフォーマットに合わせて、<br>
+技をデザインしなおす必要が、あったんだな。<br>
+で、どうせデザインするなら、質もあげようというわけよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ひょひょ？　どうやってメモリ消費を押さえるデスか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>お、さすが<font size="+1" color="#ffff00"><b>プログラマのたまご</b></font>だね。<br>
+その前にこないだの課題は終わったのか？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ぎくっ・・・ヤバイデス。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>まあいいや。<br>
+基本的には容量がやばいときは、データを圧縮するでしょ？<br>
+で、それを使うときに戻してやるのさ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>フムフム。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>だから圧縮効率の高いデータフォーマットを・・・、</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>いちごわかったデス！！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>ん？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>圧縮効率の良いものを考えて、<br>
+技をどっさり入れたデスね！ね！ね！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>ちが－－－－う！<br>
+話はちゃんと最後までききなさい。<br>
+だから<b><font size="+1" color="#ff0000">いちごのプログラムはバグだらけ</font></b>なんだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ふにゃ！　<b>いちご</b>、おこられた。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>圧縮効率の高いフォーマットを使った上で、<br>
+質と両立するのに苦労したんだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>なるへそ。それは難しいデス！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>へたな<b><font color="#ffff00">圧縮伸長プログラム</font></b>をかくと、<br>
+せっかくデザインしたかっこいい技が、<br>
+劣化してガクガクになるんだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>ほほう。プログラムですか～。（実はわかってない）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>あと「<b><font color="#ffff00">ＣＰＵの処理量</font></b>」の問題もあるから、<br>
+この３つのトレードオフだね。<br>
+ポリ格の場合、モーションの質は面白さを左右するほど<br>
+重要だから、ぜったいに<b><font size="+1" color="#ff0000">ジャギでガチャガチャ</font></b>な動きには<br>
+したくなかったわけよ。<br>
+<b><font size="+2" color="#ff0000">処理落ちは論外</font></b>だな。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>がちゃがちゃデスか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>みるくも、<b><font size="+1" color="#ff0000">絵が飛ぶのは嫌い</font></b>だなあ。<br>
+処理落ちは、たまにはいいもんだけど。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>いちごはあまり気付かないデス。<br>
+きらいなものは<font size="+2" color="#00ff40">たまねぎ</font>だけデス！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>おまえら・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>はっ！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>どうした！？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font color="#0080ff">わらじー</font></b>がいないデス！<br>
+さっきまで<b>みるく</b>の後ろで遊んでたのに！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>げ！　まぢ！？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>あ！！！　ボス！うごかないで！！！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>なんだよ？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font color="#ff0000"><font size="+2">ぐぁ</font>－－－－－－－－－－－－－<font size="+2">！！！！！！</font></font></b><br>
+ボ、ボス・・・足の裏・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>ん？<br>
+<font size="+1"><b><font color="#ff0000">ひ・・・ひぇ～～～！！！！</font></b></font><br>
+つぶれてるし～～～！！！</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>っぐ・・・ぐぐぐ！！！（笑いをこらえている）</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>にがいぞ、これ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td><b><font color="#ff0000"><font size="+2">ひどいひどいひどいデス</font><font size="+2">！！！</font><br>
+<font size="+2">うぇ～～ん！！！</font></font></b></td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>あ～、かわいそうだね。ぐすん、悲しいな・・・。<br>
+<b>みるく</b>、ひそかに<b>ポイントアップ</b>。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#ff8080"><b>いちご</b></font></td>
+    <td>ホントかわいそうデス・・・<b>いちごのわらちゃん</b>・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>ホントかわいそ・・・・・・<font size="+1"><b><font color="#ffff00">俺のくつした</font></b></font>・・・・・・。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>さてと。<br>
+発表します！！！<br>
+実は、みるくは<b><font color="#ff00ff">ＳＳ版</font></b>もすきだけど、<br>
+<b><font size="+2" color="#ff80ff">業務用も好き</font></b>なんですよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>は？　いきなり話が変わったな。<br>
+まあ、<b><font color="#ff00ff">業務用ＤＯＡ</font></b>は、俺も好きだけど、あれはねぇ・・・。<br>
+だめなものはどこまでいってもだめなんだよね。<br>
+だから<b><font color="#ff00ff">サターン版</font></b>でぜんぶ作り直したんだよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>そうだったんですか。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>そう。それが<b><font color="#ff00ff">ＳＳＤＯＡ</font></b>をあーゆーコンセプトで作った<br>
+最大の理由だよ。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく</b></td>
+    <td>わっかりましたー。</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><font color="#00ffff"><b>ＩＴＡ</b></font></td>
+    <td>よし。<br>
+ところで、<b><font color="#ff8080">いちご</font></b>はさっきから、なに泣いてんの？</td></tr>
+  <tr>
+    <td valign="top"></td>
+    <td></td></tr>
+  <tr>
+    <td valign="top"><b>みるく　　　　</b>　</td>
+    <td>さあ・・・。</td></tr>
+</tbody></table>
+
+</center>
+<p align="center">
+<b><a href="https://web.archive.org/web/20000606143328/http://www.tecmo.co.jp:80/product/doa/list/list03.htm" target="_self">ゲームリスト３へ</a></b><br>
+<br>
+<b><a href="https://web.archive.org/web/20000606143328/http://www.tecmo.co.jp:80/product/doa/list/gamelist.htm" target="_parent">ゲームリスト　トップページ</a></b><br>
+<br>
+<a href="https://web.archive.org/web/20000606143328/http://www.tecmo.co.jp/product/doa/doa_home.htm#menu" target="_top"><b>メインページに戻る</b></a><br>
+</p>
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 14:33:28 Jun 06, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:17:40 Nov 24, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.896
+  exclusion.robots: 0.052
+  exclusion.robots.policy: 0.029
+  esindex: 0.014
+  cdx.remote: 7.372
+  LoadShardBlock: 50.202 (3)
+  PetaboxLoader3.datanode: 93.836 (4)
+  load_resource: 115.057
+  PetaboxLoader3.resolve: 48.899
+-->
